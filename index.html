@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Ritika's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5350ef7d31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class = "header-text">
+                <p>BTech Undergraduate :)</p>
+                <h1>Hi, I am <span>Ritika</span><br>and this is<br>my Personal Portfolio</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\about_pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Hi, I am Ritika Thakur, a 2nd year CSAI student with a passion for ML. I am a WE Scholar'23 and I enjoy coding just as much as art and literature.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>C</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>WE Scholar'23</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>IIIT Delhi</span><br>CSAI BTech'26</li>
+                            <li><span>White Leaf Public School</span><br>Class XII</li>
+                            <li><span>St. Francis School</span><br>Class X</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\SignXpert.jpg">
+                    <div class="layer">
+                        <h3>SignXpert</h3>
+                        <p>A user-friendly and accurate Sign
+                            Language Detection Website that can seamlessly translate sign language
+                            gestures into text.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\StickHero.jpg">
+                    <div class="layer">
+                        <h3>Stick Hero</h3>
+                        <p>My implementation of the Stick Hero Game using JavaFX.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\Assembler_Simulator.jpg">
+                    <div class="layer">
+                        <h3>Assembler Simulator</h3>
+                        <p>Built an assembler-simulator using C.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\Memory_Management.jpg">
+                    <div class="layer">
+                        <h3>Memory Managemment System</h3>
+                        <p>Built a memory management system using mmap and munmap in C.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\Portfolio.jpg">
+                    <div class="layer">
+                        <h3>Hello World</h3>
+                        <p>My personal portfolio website that you are viewing right now.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href ="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>ritika22408@iiitd.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8800185999</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/ritii.thakurr/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/ritika-thakur-3a8a4b255"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ritii-13"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\Resume_Ritika Thakur.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows ="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Ritika Thakur</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
+</html>
