@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("C:\Users\Ritika\OneDrive\Documents\Personal Portfolio\Hello-World\Images\home_pic.png");
+    background-image: url("Hello-World\Images\home_pic.png");
     background-size: cover;
     background-position: center;
 }
