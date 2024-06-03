@@ -15,7 +15,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -28,19 +28,42 @@
                     <p><i class="fa-solid fa-phone"></i>+91 8800185999</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/ritii.thakurr/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="www.linkedin.com/in/ritika-thakur-3a8a4b255"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ritika-thakur-3a8a4b255/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Ritii-13"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="Images/Resume_Ritika Thakur.pdf" class="btn btn2">Download CV</a>
+                    <a href="Images/Resume2.pdf" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows ="6" placeholder="Your Message" required></textarea>
+                    <form id="contact-form">
+                        <input type="text" name="user_name" placeholder="Your Name" required>
+                        <input type="email" name="user_email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <input type="hidden" name="contact_number">
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+                <script>
+                    emailjs.init('A80B9fM5F2KOmzrS4'); // replace 'YOUR_USER_ID' with your EmailJS user ID
+                
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                
+                        // generate a five digit number for the contact_number variable
+                        this.contact_number.value = Math.random() * 100000 | 0;
+                
+                        // these IDs from the previous steps
+                        emailjs.sendForm('service_tju23k7', 'template_0syjtwj', this)
+                            .then(function() {
+                                console.log('SUCCESS!');
+                                location.reload(); 
+                            }, function(error) {
+                                console.log('FAILED...', error);
+                                location.reload();
+                            });
+                    });
+                </script>
             </div>
         </div>
         <div class="copyright">
