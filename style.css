@@ -142,6 +142,12 @@ header{
 #about h1 span{
     color: #b7b7ff;
 }
+#portfolio h1 span{
+    color: #b7b7ff;
+}
+#contact h1 span{
+    color: #b7b7ff;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -154,7 +160,7 @@ header{
     overflow: hidden;
 }
 .work img{
-    width: 110%;
+    width: 100%;
     height: 165px;
     border-radius: 10px;
     display: block;
