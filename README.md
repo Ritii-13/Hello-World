@@ -20,7 +20,7 @@ Hello-World is Ritika's personal portfolio website, showcasing her projects, ski
 
 ## Usage
 
-To view Ritika's portfolio website, simply navigate to the URL [here]([#](https://ritii-13.github.io/Hello-World/)) in your web browser.
+To view Ritika's portfolio website, simply navigate to the URL [here](https://ritii-13.github.io/Hello-World/) in your web browser.
 
 ## Credits
 
