@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Ritika's Personal Portfolio-About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5350ef7d31.js" crossorigin="anonymous"></script>
+    <script>
+        function opentab(tabId) {
+            // Get all tab-contents and hide them
+            var tabContents = document.getElementsByClassName('tab-contents');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = 'none';
+            }
+
+            // Get all tab-links and remove the 'active-link' class
+            var tabLinks = document.getElementsByClassName('tab-links');
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('active-link');
+            }
+
+            // Show the current tab and add the 'active-link' class to the current tab link
+            document.getElementById(tabId).style.display = 'block';
+            event.currentTarget.className += ' active-link';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/about_pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Hi, I am Ritika Thakur, a 3rd year CSAI student with a passion for AI-ML. I am a WE Scholar'23 and I enjoy coding just as much as art and literature
+                        (which is a lot). I enjoy full stack development, maybe a little too much for my own good and I'm always eager to learn. My favorite language to work with is Python
+                        and I am currently exploring the different ways to work with the current AI-ML technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>C++</span></li>
+                            <li><span>C</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>EJS</span></li>
+                            <li><span>MySQL</span></li>
+                            <li><span>MongoDB</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>WE Scholar'23</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>IIIT Delhi</span><br>CSAI BTech'26</li>
+                            <li><span>White Leaf Public School</span><br>Class XII</li>
+                            <li><span>St. Francis School</span><br>Class X</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
