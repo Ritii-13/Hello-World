@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5350ef7d31.js" crossorigin="anonymous"></script>
     <style>
+        /* Add image */
         .cursor {
             position: fixed;
             width: 20px;
@@ -20,7 +21,7 @@
             z-index: 9999;
             box-shadow: 0 0 20px 15px rgba(93, 93, 182, 0.5);
             /* Glowing effect */
-            animation: glow 1s ease-in-out infinite alternate;
+            /* animation: glow 1s ease-in-out infinite alternate; */
         }
 
         @keyframes glow {
@@ -48,20 +49,31 @@
                 <p>BTech Undergraduate :)</p>
                 <h1>Hi, I am <span>Ritika</span><br>and this is<br>my Personal Portfolio</h1>
             </div>
+            <!-- <div class="header-image">
+                <img src="home.png" alt="Home Image">
+            </div> -->
         </div>
     </div>
 
     <div id="about">
         <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
             <div class="row">
                 <div class="about-col-1">
-                    <img src="Images/about_pic.jpg">
+                    <img src="Images/about_pic.jpg"> 
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About <span>Me</span></h1>
                     <p>Hi, I am Ritika Thakur, a 3rd year CSAI student with a passion for AI-ML. I am a WE Scholar'23 and I enjoy coding just as much as art and literature
                         (which is a lot). I enjoy full stack development, maybe a little too much for my own good and I'm always eager to learn. My favorite language to work with is Python
-                        and I am currently exploring the different ways to work with the current AI-ML technologies.</p>
+                        and its various frameworks and I am currently exploring the different ways to work with the current AI-ML technologies.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -83,6 +95,7 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
+                            <li><span>Upcoming SWE Intern at Google</span></li>
                             <li><span>WE Scholar'23</span></li>
                         </ul>
                     </div>
@@ -100,6 +113,14 @@
 
     <div id="portfolio">
         <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
             <h1 class="sub-title">My <span>Works</span></h1>
             <div class="work-list">
                 <div class="work">
@@ -110,6 +131,15 @@
                             Language Detection Website that can seamlessly translate sign language
                             gestures into text.</p>
                         <a href="https://github.com/Ritii-13/SignXpert"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/lang.png">
+                    <div class="layer">
+                        <h3>Pan India Language Classifier</h3>
+                        <p>A language recognition system for Pan Indian languages
+                             using classical machine learning techniques on audio recordings.</p>
+                        <a href="https://github.com/Ritii-13/Pan-Indian-Language-Classifier"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -144,16 +174,16 @@
                         <a href="https://github.com/Ritii-13/Assembler-Simulator-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <!-- <div class="work">
                     <img src="Images/Memory_Management.jpg">
                     <div class="layer">
                         <h3>Memory Managemment System</h3>
                         <p>Built a memory management system using mmap and munmap in C.</p>
                         <a href="https://github.com/Ritii-13/Memory-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
+                </div> -->
                 <div class="work">
-                    <img src="Images/Portfolio.jpg">
+                    <img src="Images/Portfolio.png">
                     <div class="layer">
                         <h3>Hello World</h3>
                         <p>My personal portfolio website that you are viewing right now.</p>
@@ -167,13 +197,21 @@
 
     <div id="contact">
         <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact <span>Me</span></h1>
                     <p><i class="fa-solid fa-envelope"></i>ritika22408@iiitd.ac.in</p>
-                    <p><i class="fa-solid fa-phone"></i>+91 8800185999</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i>+91 8800185999</p> -->
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/ritii.thakurr/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="https://www.instagram.com/ritii.thakurr/?next=%2F"><i class="fa-brands fa-instagram"></i></a> -->
                         <a href="https://www.linkedin.com/in/ritika-thakur-3a8a4b255/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Ritii-13"><i class="fa-brands fa-github"></i></a>
                     </div>
